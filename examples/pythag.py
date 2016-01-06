@@ -158,7 +158,7 @@ def _idris_PE_95_Prelude_46_Show_46__40_a_44__32_b_41__32_instance_32_of_32_Prel
   while True:
     assert True  # Builtins.MkPair
     in0, in1 = e0
-    return ("(" + (_idris_Prelude_46_Show_46_primNumShow(None, (65674,), (0,), in0) + (", " + (_idris_Prelude_46_Show_46_primNumShow(None, (65674,), (0,), in1) + ")"))))  # {U_prim__toStrInt1}, Prelude.Show.Open, {U_prim__toStrInt1}, Prelude.Show.Open
+    return (u'(' + (_idris_Prelude_46_Show_46_primNumShow(None, (65674,), (0,), in0) + (u', ' + (_idris_Prelude_46_Show_46_primNumShow(None, (65674,), (0,), in1) + u')'))))  # {U_prim__toStrInt1}, Prelude.Show.Open, {U_prim__toStrInt1}, Prelude.Show.Open
     return _idris_error("unreachable due to case in tail position")
 
 # PE_Prelude.Show.List a instance of Prelude.Show.Show, method show_54220539
@@ -166,14 +166,14 @@ def _idris_PE_95_Prelude_46_Show_46_List_32_a_32_instance_32_of_32_Prelude_46_Sh
   e0
 ):
   while True:
-    return ("[" + (_idris_Prelude_46_Show_46_Prelude_46_Show_46__64_Prelude_46_Show_46_Show_36_List_32_a_58__33_show_58_0_58_show_39__58_0(
+    return (u'[' + (_idris_Prelude_46_Show_46_Prelude_46_Show_46__64_Prelude_46_Show_46_Show_36_List_32_a_58__33_show_58_0_58_show_39__58_0(
       None,
       None,
       None,
       _idris_PE_95__40_a_44__32_b_41__32_instance_32_of_32_Prelude_46_Show_46_Show_95_a94d79ab(),
-      "",
+      u'',
       e0
-    ) + "]"))
+    ) + u']'))
 
 # PE_concatMap_af3155d1
 def _idris_PE_95_concatMap_95_af3155d1(e0, e1, e2, e3):
@@ -327,7 +327,7 @@ def _idris_Prelude_46_Show_46_primNumShow(e0, e1, e2, e3):
     if not aux1:  # Prelude.Bool.False
       return in0
     else:  # Prelude.Bool.True
-      return ("(" + (in0 + ")"))
+      return (u'(' + (in0 + u')'))
     return _idris_error("unreachable due to case in tail position")
 
 # prim__addInt
@@ -343,17 +343,17 @@ def _idris_prim_95__95_concat(op0, op1):
 # prim__eqBigInt
 def _idris_prim_95__95_eqBigInt(op0, op1):
   while True:
-    return (op0 == op1)
+    return int(op0 == op1)
 
 # prim__eqChar
 def _idris_prim_95__95_eqChar(op0, op1):
   while True:
-    return (op0 == op1)
+    return int(op0 == op1)
 
 # prim__eqInt
 def _idris_prim_95__95_eqInt(op0, op1):
   while True:
-    return (op0 == op1)
+    return int(op0 == op1)
 
 # prim__eqManagedPtr
 def _idris_prim_95__95_eqManagedPtr(op0, op1):
@@ -368,7 +368,7 @@ def _idris_prim_95__95_eqPtr(op0, op1):
 # prim__eqString
 def _idris_prim_95__95_eqString(op0, op1):
   while True:
-    return (op0 == op1)
+    return int(op0 == op1)
 
 # prim__mulInt
 def _idris_prim_95__95_mulInt(op0, op1):
@@ -398,12 +398,12 @@ def _idris_prim_95__95_sextInt_95_BigInt(op0):
 # prim__sltBigInt
 def _idris_prim_95__95_sltBigInt(op0, op1):
   while True:
-    return (op0 < op1)
+    return int(op0 < op1)
 
 # prim__sltInt
 def _idris_prim_95__95_sltInt(op0, op1):
   while True:
-    return (op0 < op1)
+    return int(op0 < op1)
 
 # prim__stderr
 def _idris_prim_95__95_stderr():
@@ -501,7 +501,7 @@ def _idris_Prelude_46_Show_46_showParens(e0, e1):
     if not e0:  # Prelude.Bool.False
       return e1
     else:  # Prelude.Bool.True
-      return ("(" + (e1 + ")"))
+      return (u'(' + (e1 + u')'))
     return _idris_error("unreachable due to case in tail position")
 
 # Prelude.Show.showPrec
@@ -515,7 +515,7 @@ def _idris_Prelude_46_Show_46_showPrec(e0, e1):
 # Prelude.Strings.strM
 def _idris_Prelude_46_Strings_46_strM(e0):
   while True:
-    aux3 = (e0 == "")
+    aux3 = int(e0 == u'')
     if aux3 == 0:
       aux4 = False
     else:
@@ -983,7 +983,7 @@ def _idris_Prelude_46_Classes_46__123_Prelude_46_Classes_46_Int_32_instance_32_o
   e0, e1
 ):
   while True:
-    aux1 = (e0 == e1)
+    aux1 = int(e0 == e1)
     if aux1 == 0:
       return False
     else:
@@ -1007,12 +1007,12 @@ def io_bind0(e0, e1, e2, e3, e4, _idris_w, in0):
 # Main.{main0}
 def _idris_Main_46__123_main0_125_(in0):
   while True:
-    return _idris_Prelude_46_Interactive_46_putStr_39_(None, "\n")
+    return _idris_Prelude_46_Interactive_46_putStr_39_(None, u'\u000a')
 
 # Prelude.Show.{primNumShow0}
 def _idris_Prelude_46_Show_46__123_primNumShow0_125_(in1):
   while True:
-    aux1 = (in1 == '-')
+    aux1 = int(in1 == u'-')
     if aux1 == 0:
       return False
     else:
@@ -1095,7 +1095,7 @@ def _idris_Prelude_46_Interactive_46__123_putStr_39_1_125_(in1):
 # Main.{pythag1}
 def _idris_Main_46__123_pythag1_125_(in1, in0, in2):
   while True:
-    aux2 = (((in2 * in2) + (in1 * in1)) == (in0 * in0))
+    aux2 = int(((in2 * in2) + (in1 * in1)) == (in0 * in0))
     if aux2 == 0:
       aux3 = False
     else:
@@ -1595,7 +1595,7 @@ def _idris_Prelude_46_Show_46_Prelude_46_Show_46__64_Prelude_46_Show_46_Show_36_
       if not in1:  # Prelude.List.Nil
         return (e4 + APPLY0(_idris_Prelude_46_Show_46_show(None, e3), in0))
       else:
-        e0, e1, e2, e3, e4, e5, = None, None, None, e3, (e4 + (APPLY0(_idris_Prelude_46_Show_46_show(None, e3), in0) + ", ")), in1,
+        e0, e1, e2, e3, e4, e5, = None, None, None, e3, (e4 + (APPLY0(_idris_Prelude_46_Show_46_show(None, e3), in0) + u', ')), in1,
         continue
         return _idris_error("unreachable due to tail call")
       return _idris_error("unreachable due to case in tail position")
@@ -1678,7 +1678,7 @@ def _idris_Prelude_46_Classes_46_Prelude_46_Show_46__64_Prelude_46_Classes_46_Eq
           in1, in0
         )
       else:
-        aux1 = (_idris_Prelude_46_Show_46_precCon(e0) == _idris_Prelude_46_Show_46_precCon(e1))
+        aux1 = int(_idris_Prelude_46_Show_46_precCon(e0) == _idris_Prelude_46_Show_46_precCon(e1))
         if aux1 == 0:
           return False
         else:
@@ -1686,7 +1686,7 @@ def _idris_Prelude_46_Classes_46_Prelude_46_Show_46__64_Prelude_46_Classes_46_Eq
         return _idris_error("unreachable due to case in tail position")
       return _idris_error("unreachable due to case in tail position")
     else:
-      aux2 = (_idris_Prelude_46_Show_46_precCon(e0) == _idris_Prelude_46_Show_46_precCon(e1))
+      aux2 = int(_idris_Prelude_46_Show_46_precCon(e0) == _idris_Prelude_46_Show_46_precCon(e1))
       if aux2 == 0:
         return False
       else:
@@ -1750,14 +1750,14 @@ def _idris_Prelude_46_Classes_46_Prelude_46_Classes_46__64_Prelude_46_Classes_46
   e0, e1
 ):
   while True:
-    aux2 = (e0 == e1)
+    aux2 = int(e0 == e1)
     if aux2 == 0:
       aux3 = False
     else:
       aux3 = True
     aux1 = aux3
     if not aux1:  # Prelude.Bool.False
-      aux5 = (e0 < e1)
+      aux5 = int(e0 < e1)
       if aux5 == 0:
         aux6 = False
       else:
@@ -1777,14 +1777,14 @@ def _idris_Prelude_46_Classes_46_Prelude_46_Classes_46__64_Prelude_46_Classes_46
   e0, e1
 ):
   while True:
-    aux2 = (e0 == e1)
+    aux2 = int(e0 == e1)
     if aux2 == 0:
       aux3 = False
     else:
       aux3 = True
     aux1 = aux3
     if not aux1:  # Prelude.Bool.False
-      aux5 = (e0 < e1)
+      aux5 = int(e0 < e1)
       if aux5 == 0:
         aux6 = False
       else:
@@ -1885,7 +1885,7 @@ def _idris_Prelude_46_Show_46_Prelude_46_Show_46__64_Prelude_46_Show_46_Show_36_
   while True:
     assert True  # Builtins.MkPair
     in0, in1 = e6
-    return ("(" + (APPLY0(_idris_Prelude_46_Show_46_show(None, e4), in0) + (", " + (APPLY0(_idris_Prelude_46_Show_46_show(None, e5), in1) + ")"))))
+    return (u'(' + (APPLY0(_idris_Prelude_46_Show_46_show(None, e4), in0) + (u', ' + (APPLY0(_idris_Prelude_46_Show_46_show(None, e5), in1) + u')'))))
     return _idris_error("unreachable due to case in tail position")
 
 # with block in Prelude.Strings.strM
